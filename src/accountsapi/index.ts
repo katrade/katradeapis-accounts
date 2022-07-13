@@ -43,4 +43,8 @@ export class AccountAPI {
     })
   }
 
+  public getClientSecret(): string {
+    return this.clientSecret
+  }
+
 }
