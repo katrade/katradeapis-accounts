@@ -5,7 +5,7 @@ import { AxiosInstance } from "axios";
 import App from "../types/app";
 import { ApplicationResponse } from '../types/kuservice';
 
-export class AccountAPIInstance {
+export class AccountAPI {
   public clientId: string;
   public devCallbackUrl: string;
   public type: AccountAPIOptions["type"];

@@ -1,13 +1,12 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { AccountAPIInstance } from "../accountsapi";
-import { INTERFACE_BASE_URL } from "../constants";
+import { AccountAPI } from "../accountsapi";
 
 interface SigninButtonProps {
   width?: string | number;
   height?: string | number;
   borderRadius?: string | number;
-  apiInstance: AccountAPIInstance;
+  apiInstance: AccountAPI;
 }
 
 interface SigninButtonContainerProps {
