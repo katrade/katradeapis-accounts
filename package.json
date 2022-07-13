@@ -1,7 +1,7 @@
 {
   "name": "@katradeapis/accounts",
   "author": "Nutchanon Chantrasup",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",

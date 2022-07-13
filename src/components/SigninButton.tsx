@@ -27,7 +27,7 @@ const SigninButtonContainer = styled.button<SigninButtonContainerProps>`
   border-radius: ${(props) => props.width ? props.width : defaults.borderRadius};
   background-color: #00de73;
   color: white;
-  
+  border: none;
 `
 export const SigninButton: FC<SigninButtonProps> = (props) => {
 

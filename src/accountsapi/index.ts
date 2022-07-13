@@ -4,6 +4,7 @@ import { AccountAPIOptions } from "../types/accountapi";
 import { AxiosInstance } from "axios";
 import App from "../types/app";
 import { ApplicationResponse } from '../types/kuservice';
+import { INTERFACE_BASE_URL } from '../constants';
 
 export class AccountAPI {
   public clientId: string;
@@ -36,7 +37,7 @@ export class AccountAPI {
   // Server side sign in is not allowed in this sdk.
   // Development mode will be available soon.
   public signinUrl(scope: "0", ref?: string): string {
-    return mapQueryStringToUrl("/signin", {
+    return mapQueryStringToUrl(`${INTERFACE_BASE_URL}/signin`, {
       client_id: this.clientId,
       scope: scope,
       ref: ref ? ref : ""
